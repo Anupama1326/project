@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,236 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Outer-Layout{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.Left-Side{
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+}
+.Left-Image{
+  width: 100vw;
+  height: 100vh;
+}
+.Right-Side{
+  padding-left: 15vw;
+  padding-top: 35vh;
+}
+.Input-Size{
+  width: 15vw;
+  height: 3vh;
+  border-radius: 5px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+
+.MainpageStyle{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./Images/food_main.jpg);
+  backdrop-filter: blur(25px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MainpageStyle Label{
+  font-size: 75px;
+  color: Black;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.3);
+  padding: 12px 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+
+.nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: white;
+  font-size: 25px;
+}
+h1{
+ 
+  padding: 10px;
+  font-size: 35px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 20px;
+}
+
+.ExplorePage{
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(25px);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.Orders{
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(./Images/Orders.jpg); */
+  background-size: cover;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  overflow-y: hidden;
+  background-repeat:repeat-x;
+}
+
+.profile{
+  width: 100vw;
+  height: 43vh;
+  /* background-image: url(./Images/final.jpg); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  background-repeat:repeat-x;
+}
+
+.Cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Card{
+  margin-top: 150px;
+  width: 20vw;
+  height: 60vh;
+  border-radius: 25px;
+  background-color: white;
+  
+}
+.Imgdiv{
+  height: 70%;
+  width: 100%;
+  
+}
+.Imgdiv img{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.imgdesc{
+  background-color: white;
+  width: 100%;
+  height: 30%;
+  border-radius: 0px 0px 25px 25px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+}
+.imgdesc h1{
+  font-size: 35px;
+  margin: 0;
+}
+.imgdesc button{
+  width: 125px;
+  height: 35px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background-color: #282c34;
+  color: white;
+
+
+}
+.orderleft{
+  width: 100vh;
+  height: 100vh;
+  background-color: #61dafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 80px;
+}
+.cardorders{
+  width: 50vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.Imgdivorder{
+  height: 100%;
+  width: 100%;
+  
+}
+.Imgdivorder img{
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  border-radius: 25px 0px 0px 25px;
+}
+.imgdescorder{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 25px 25px 0px;
+}
+.imgdescorder h1{
+  font-size: 35px;
+  margin: 0;
+}
+.imgdescorder p{
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 25px;
+}
+.imgdescorder button{
+  width: 125px;
+  height: 35px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background-color: #282c34;
+  color: white;
+  margin-top: 2px;
+}
+.orderright{
+  width: 100vh;
+  height: 100vh;
+  background-color: #61dafb;
+  
 }
